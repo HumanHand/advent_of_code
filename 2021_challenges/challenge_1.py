@@ -9,5 +9,5 @@ with open("input.txt") as input :
 		elif i > depths[i - 1] :
 			change = "(Increased)"
 		elif i < depths[i - 1] :
-			chane = "(Decreased)"
+			change = "(Decreased)"
 		print("Depth: " + i + " " + change)
