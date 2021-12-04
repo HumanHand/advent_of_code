@@ -5,7 +5,7 @@ with open("input.txt") as input :
 		if count is 0 :
 			print("Depth: " + i)
 			count = 1
-		if i > depths[i - 1] :
+		elif i > depths[i - 1] :
 			print("Depth: " + i + " (Increased)")
 		elif i < depths[i - 1] :
 			print("Depth: " + i + " (Decreased)")
