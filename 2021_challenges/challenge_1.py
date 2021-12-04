@@ -5,9 +5,9 @@ with open("input.txt") as input :
 		if count is 0 :
 			print("Depth: " + i)
 			count = 1
+			continue
 		elif i > depths[i - 1] :
-			print("Depth: " + i + " (Increased)")
+			change = "(Increased)"
 		elif i < depths[i - 1] :
-			print("Depth: " + i + " (Decreased)")
-		else :
-			print("Depth: " + i + " (No difference)")	
+			chane = "(Decreased)"
+		print("Depth: " + i + " " + change)
